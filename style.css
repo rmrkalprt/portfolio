@@ -11,17 +11,73 @@ body{
     background-color: #1A1A1D;
 }
 
+nav{
+    background-color: rgba(0, 0, 0, 0.623);
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 5rem;
+    /*line-height: 30px;*/
+
+}
+
+nav ul{
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px 10px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+nav li:hover {
+    border-radius: 1rem;
+    transition: 0.5s ease-in-out;
+    transform: scale(0.9);
+}
+nav li a:hover{
+    background-color: white ;
+    border-radius: 1rem;
+    color: black;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;    
+    font-family: 'Roboto Condensed', sans-serif;
+    background: transparent;
+}
+
+nav img {
+    float: left;
+    padding-left: 30px
+
+    }
+
+hr{
+    border: dotted gray 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
 
 
 .header{
     background-image: url(image/header-pic.jpg);
-    /*background-image: url(image/sample.gif);*/
+    /* background-image: url(image/sample.gif); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     text-align: center;
-    height: 95vh;
+    height: 100vh;
    
     width: 100%;
 }
@@ -31,13 +87,13 @@ body{
 }
 
 .header-text{
-    padding-top: 13rem;
+    padding-top: 15rem;
     
 }
 
 .header-text h1{
     color: white;
-    font-size: 6rem;
+    font-size: 5rem;
     font-family: 'Merriweather', serif;
 }
 
@@ -85,7 +141,7 @@ body{
 .developer-info p{
     margin-bottom: 1rem;
     font-family: 'Roboto Condensed', sans-serif;
-    /* text-align: center; */
+    text-align: center;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     line-height: 1.5;
@@ -289,19 +345,48 @@ body{
     height: 8rem;
 }
 
-.edit-img{
-    height: 8rem;
-}
-
 .bootstrap-img{
     height: 8rem;
     width: 10.5rem;
 }
 
+.php-img{
+    height: 8rem;
+    width: 9.8rem;
+}
+
+.js-img{
+    height: 8rem;
+}
+
+.photoshop-img{
+    height: 9rem;
+    width: 9.5rem;
+}
+
+.pr-img{
+    height: 9rem;
+    width: 9.5rem;
+}
+
+.ae-img{
+    height: 9rem;
+    width: 9.5rem;
+}
+
+/*.fil-img{
+    height: 9rem;
+    width: 9.5rem;
+}
+
+
 
 
 
 /*-----Contact Me----- */
+
+
+
 
 .contact-container{
     min-height: 30rem;
@@ -410,11 +495,20 @@ body{
     text-decoration: none;
     color: white;
     margin-right: 0.5rem;
+    font-size: 2rem;
     
 }
 
-.icon a:hover{
-    background-color:lightblue;
+/* .icon a:hover{
+    background-color: darkgray;
+    transition: 0.5s;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    
+} */
+
+.icon a .fab:hover{
     transition: 0.5s;
     -webkit-transform: scale(1.3);
     -ms-transform: scale(1.3);
@@ -559,6 +653,31 @@ body{
         padding-top: 0.5rem;
         padding-bottom: 1rem;
     }
+
+
+    .middle2-container h2{
+        margin-bottom: 1rem;
+    }
+    .skill2-container{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        line-height: 1;
+        box-sizing: border-box;
+        
+    }
+    .skill2-container div{
+        padding-bottom: 1rem;
+        flex: 0 0 50%;
+        max-width: 50%;
+    
+        
+    }
+    .skill2-container h3{
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+    }
+
 
     /* CONTACT */
 
